@@ -3,42 +3,40 @@ export const interventions = [
     id: 1,
     slug: "events-for-milestones",
     title: "Community Events for Transit Milestones",
-    tagline: "Comfortable, attractive stops that people want to use",
-    description: "Upgraded shelters with seating, lighting, real-time information, and weather protection transform the waiting experience and signal investment in quality transit.",
+    tagline: "Share the transit agency's excitement for delivering big projects",
+    description: "Demonstrate to the public that the transit agency understands the positive impact of following through on delivering infrastructure improvements by celebrating together.",
     benefits: [
-      "Improves comfort and safety",
-      "Increases perceived service quality",
+      "Shows to the public that the transit agency is excited to follow through and deliver a project,",
+      "Public gets to share with the transit agency the success of a project,",
       "Provides advertising revenue opportunities",
-      "Enhances neighborhood appeal"
+      "Generates a sense of community and bond between the transit agency and the public."
     ],
-    implementation: "Prioritize high-ridership stops and areas with longer wait times. Partner with advertising companies for funding. Include amenities like USB charging and wifi where feasible.",
+    implementation: "Collaborate with vendors and caterers in advance to have adequate supplies to celebrate with the public at infrastructure openings.",
     examples: [
-      "Seattle Metro shelters",
-      "San Francisco Muni stops",
-      "Denver RTD stations"
+      "UP Express launch Toronto to YYZ,",
+      "REM opening celebrations.",
     ],
     cardimage: "/images/milestone-events-1.jpg",
     images: [
       "/images/milestone-events-1.jpg",
-    ],    category: "Celebration"
+    ],    category: "Celebrate"
   },
   {
     id: 2,
     slug: "limited-transit-cards",
     title: "Limited Edition Transit Cards",
-    tagline: "Let riders know exactly when their bus arrives",
-    description: "Digital displays at stops showing live arrival times reduce uncertainty and perceived wait times. Riders feel more in control and informed about their journey.",
+    tagline: "Collectible cards to generate buzz",
+    description: "A fun way to put a piece of the transit system is the public’s pocket, providing a sense of ownership.",
     benefits: [
-      "Reduces perceived wait time",
-      "Improves rider satisfaction",
-      "Builds trust in the system",
-      "Enables better trip planning"
+      "Can be sold for a small cost to generate revenue,",
+      "Can be made digital to extend outreach,",
+      "Genre of cards can be changed depending on event (I.e. new vehicle fleets or new physical infrastructure),",
+      "Easier to store and distribute than most merchandise."
     ],
-    implementation: "Install digital displays at high-traffic stops first. Integrate with your real-time tracking system. Ensure displays are visible in all weather and lighting conditions.",
+    implementation: "Have a large number of cards on hand at public events to decimate to the public to drive up attendance.",
     examples: [
-      "TTC, Toronto - Next Vehicle screens",
-      "London TfL Countdown",
-      "NYC MTA Bus Time"
+      "Translink trading cards,",
+      "Airline trading cards.",
     ],
     cardimage: "/images/cards-4.png",
     images: [
@@ -47,71 +45,72 @@ export const interventions = [
       "/images/cards-2.png",
       "/images/cards-3.png",
     ],
-    category: "Celebration"
+    category: "Celebrate"
   },
   {
     id: 3,
     slug: "community-engagement",
     title: "Community Group Engagement",
-    tagline: "Create a distinct identity for frequent routes",
-    description: "Rebrand your frequent routes with unique colors, logos, and upgraded vehicles. A strong brand makes transit feel premium and easier to understand.",
+    tagline: "Work with users and residents to incorporate needs",
+    description: "[To be added]",
     benefits: [
-      "Makes system easier to navigate",
-      "Creates premium perception",
-      "Increases visibility and awareness",
-      "Builds civic pride"
+      "[To be added]",
     ],
-    implementation: "Identify your most frequent routes (10-15 minute headways). Develop distinctive branding including vehicle wraps, stop design, and wayfinding. Launch with marketing campaign.",
+    implementation: "[To be added]",
     examples: [
-      "Seattle RapidRide",
-      "San Francisco Muni Metro",
-      "Boston Silver Line"
+      "[To be added]",
     ],
     cardimage: "/images/community-engagement-1.jpg",
     images: [
       "/images/community-engagement-1.jpg",
-    ],    category: "Empowerment"
+    ],    
+    category: "Empower"
   },
   {
     id: 4,
     slug: "first-rider",
     title: "First Rider Program",
-    tagline: "Give buses the green light to keep moving",
-    description: "TSP systems detect approaching buses and extend green lights or shorten red lights, reducing delays at intersections without significantly impacting other traffic.",
+    tagline: "Teaching the basics of transit to the next transit riders",
+    description: "Educate the next generation about how to use transit. These programs guide children on how to ride the bus for the first time, and encourage independence in transport from a young age. Schools can set up times for the transit agency to come in. This can be followed up with resources for parents that want to encourage further use of public transit.",
     benefits: [
-      "Reduces travel time by 10-20%",
-      "Improves schedule adherence",
-      "Cost-effective Celebration upgrade",
-      "Minimal impact on other traffic"
+      "Encourage a culture of public transit from a young age,",
+      "Allow children to become more comfortable with taking transit,",
+      "Empower parents to give greater transit independence to their children.",
+      //"Minimal impact on other traffic"
     ],
-    implementation: "Start with key corridors with signal timing issues. Requires GPS on vehicles and traffic signal integration. Coordinate with traffic engineering departments.",
+    implementation: "[To be added]",
     examples: [
+      "[To be added]",
+    ],
+    //implementation: "Start with key corridors with signal timing issues. Requires GPS on vehicles and traffic signal integration. Coordinate with traffic engineering departments.",
+    /*examples: [
       "Portland TriMet",
       "Minneapolis Metro Transit",
       "Phoenix Valley Metro"
     ],
+    */
     cardimage: "/images/first-rider-1.jpg",
     images: [
       "/images/first-rider-1.jpg",
-    ],    category: "Education"
+    ],    
+    category: "Educate"
   },
   {
     id: 5,
     slug: "bus-wraps",
     title: "Bus Wraps",
-    //tagline: "Priority lanes for faster, more reliable service",
-    description: "Dedicated bus lanes separate buses from general traffic, dramatically improving speed and reliability. This visible commitment to transit shows riders that their time matters.",
+    tagline: "Message delivery on a 40ft scale",
+    description: "A great way to deliver a message to all corner's of a community that a transit agency serves for little to no cost.",
     benefits: [
-      "Reduces travel time by 20-40%",
-      "Improves schedule reliability",
-      "Increases ridership",
-      "Demonstrates commitment to transit"
+      "Demonstrates to the public that the event is important to the transit agency,",
+      "Wrapped buses can be used strategically on routes that serve areas where the message is intended for,",
+      "Message is viewed by not just transit users, but all users of the road,",
+      "Wrapped buses can be staged for event and photo ops."
     ],
-    implementation: "Start with high-traffic corridors during peak hours. Use clear pavement markings and signage. Consider protected lanes with physical barriers for maximum effectiveness.",
+    implementation: "Wrap buses in advance of an event to generate more attention from the public, allow vehicles to operate in revenue service.",
     examples: [
-      "TransLink, Vancouver - 99 B-Line",
-      "LA Metro Rapid",
-      "Bogotá TransMilenio"
+      "TTC “ride with pride” bus wrap,",
+      "GO transit “metrolinx celebrates black history” bus wrap.",
     ],
     cardimage: "/images/buswrap-5.jpg",
     images: [
@@ -124,59 +123,49 @@ export const interventions = [
       "/images/buswrap-8.png",
       "/images/buswrap-9.jpg",
     ],
-    category: "Celebration"
+    category: "Celebrate"
   },
   {
     id: 6,
     slug: "organize-political",
     title: "Organize with Political Parties",
-    tagline: "Speed up boarding and reduce dwell time",
-    description: "Allow passengers to board through any door, not just the front. This simple change dramatically reduces dwell time at busy stops and speeds up the entire route.",
+    tagline: "Align goals with decision-makers",
+    description: "[To be added]",
     benefits: [
-      "Reduces dwell time by 30-50%",
-      "Speeds up overall route time",
-      "Improves passenger flow",
-      "Works well with proof-of-payment systems"
+      "[To be added]",
     ],
-    implementation: "Requires fare validation system or proof-of-payment. Install validators at all doors. Train staff on new procedures. Start with high-frequency routes.",
+    implementation: "[To be added]",
     examples: [
-      "San Francisco Muni",
-      "LA Metro Rapid",
-      "TransLink Vancouver"
+      "[To be added]",
     ],
     cardimage: "/images/organize-political-1.png",
     images: [
       "/images/organize-political-1.png",
-    ],    category: "Empowerment"
+    ],    category: "Empower"
   },
   {
     id: 7,
     slug: "participate-in-community",
     title: "Participation in Community Events",
-    tagline: "Speed up boarding and reduce dwell time",
-    description: "Allow passengers to board through any door, not just the front. This simple change dramatically reduces dwell time at busy stops and speeds up the entire route.",
+    tagline: "Ensure representation of transit in your communities",
+    description: "[To be added]",
     benefits: [
-      "Reduces dwell time by 30-50%",
-      "Speeds up overall route time",
-      "Improves passenger flow",
-      "Works well with proof-of-payment systems"
+      "[To be added]",
     ],
-    implementation: "Requires fare validation system or proof-of-payment. Install validators at all doors. Train staff on new procedures. Start with high-frequency routes.",
+    implementation: "[To be added]",
     examples: [
-      "San Francisco Muni",
-      "LA Metro Rapid",
-      "TransLink Vancouver"
+      "[To be added]",
     ],
-    cardimage: "/images/icecream.png",
+    cardimage: "/images/community-events-1.jpg",
     images: [
-      "/images/icecream.png",
-    ],    category: "Integration"
+      "/images/community-events-1.jpg",
+    ],    category: "Integrate"
   }
 ];
 
 export const categories = [
-  "Celebration",
-  "Empowerment", 
-  "Education",
-  "Integration"
+  "Celebrate",
+  "Empower", 
+  "Educate",
+  "Integrate"
 ];

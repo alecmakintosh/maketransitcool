@@ -47,8 +47,8 @@ function App() {
 
             <div className={`nav-links ${menuOpen ? 'active' : ''}`}>
               <Link to="/" onClick={closeMenu}>Home</Link>
-              <Link to="/stories" onClick={closeMenu}>Our Stories</Link>
               <Link to="/interventions" onClick={closeMenu}>Interventions</Link>
+              <Link to="/stories" onClick={closeMenu}>Our Stories</Link>
             </div>
           </div>
         </nav>

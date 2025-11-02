@@ -33,8 +33,8 @@ function Home() {
               <p>Public transit projects are easier to plan and fund when there is a culture of support for transit from the public.</p>
             </div>
             <div className="why-card">
-              <h3>Decision-Makers Can </h3>
-              <p>Greater political will compels decision-makers to act to support transit.</p>
+              <h3>Decision-Makers Can Act Backed By Voters</h3>
+              <p>Greater public backing compels leaders to work to support transit infrastructure and policy.</p>
             </div>
           </div>
         </div>

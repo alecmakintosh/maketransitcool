@@ -1,21 +1,35 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import Interventions from './pages/Interventions';
 import Footer from './components/Footer';
 import './App.css';
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <Router>
       <div className="App">
         <nav className="navbar">
           <div className="nav-container">
-            <a href="/" className="nav-logo">
+            <Link to="/" className="nav-logo">
               Make Transit Cool
-            </a>
-            <div className="nav-links">
-              <a href="/">Home</a>
-              <a href="/interventions">Interventions</a>
+            </Link>
+            
+            <button 
+              className="menu-toggle"
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-label="Toggle menu"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+            <div className={`nav-links ${menuOpen ? 'active' : ''}`}>
+              <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+              <Link to="/interventions" onClick={() => setMenuOpen(false)}>Interventions</Link>
             </div>
           </div>
         </nav>

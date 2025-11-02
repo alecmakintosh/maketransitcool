@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
+import Interventions from './pages/Interventions';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -20,8 +22,10 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* We'll add more routes here */}
+          <Route path="/interventions" element={<Interventions />} />
         </Routes>
+
+        <Footer />
       </div>
     </Router>
   );

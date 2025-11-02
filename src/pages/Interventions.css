@@ -1,0 +1,132 @@
+.interventions-page {
+  padding-top: 80px;
+  min-height: 100vh;
+  background: #f7fafc;
+}
+
+.interventions-header {
+  background: var(--gradient);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.interventions-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.interventions-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.filter-bar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 20px;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-bar button {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--primary-color);
+  background: white;
+  color: var(--primary-color);
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-bar button:hover {
+  background: #f0f4ff;
+}
+
+.filter-bar button.active {
+  background: var(--primary-color);
+  color: white;
+}
+
+.interventions-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.intervention-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.intervention-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-image-placeholder {
+  height: 200px;
+  background: var(--gradient);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #2d3748;
+}
+
+.card-tagline {
+  color: #4a5568;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.learn-more {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .interventions-header h1 {
+    font-size: 2rem;
+  }
+  
+  .interventions-grid {
+    grid-template-columns: 1fr;
+  }
+}

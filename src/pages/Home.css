@@ -3,7 +3,7 @@
 }
 
 .hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--gradient);
   color: white;
   padding: 120px 20px 80px;
   text-align: center;
@@ -37,7 +37,7 @@
   display: inline-block;
   padding: 15px 40px;
   background: white;
-  color: #667eea;
+  color: var(--primary-color);
   text-decoration: none;
   border-radius: 8px;
   font-weight: 600;
@@ -73,7 +73,7 @@
   padding: 2rem;
   background: #f7fafc;
   border-radius: 12px;
-  border-left: 4px solid #667eea;
+  border-left: 4px solid var(--primary-color);
 }
 
 .why-card h3 {

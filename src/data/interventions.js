@@ -51,8 +51,8 @@ export const interventions = [
   },
   {
     id: 3,
-    slug: "branded-bus-network",
-    title: "Branded Bus Network",
+    slug: "community-engagement",
+    title: "Community Group Engagement",
     tagline: "Create a distinct identity for frequent routes",
     description: "Rebrand your frequent routes with unique colors, logos, and upgraded vehicles. A strong brand makes transit feel premium and easier to understand.",
     benefits: [
@@ -67,15 +67,15 @@ export const interventions = [
       "San Francisco Muni Metro",
       "Boston Silver Line"
     ],
-    cardimage: "/images/icecream.png",
+    cardimage: "/images/community-engagement-1.jpg",
     images: [
-      "/images/icecream.png",
-    ],    category: "Education"
+      "/images/community-engagement-1.jpg",
+    ],    category: "Empowerment"
   },
   {
     id: 4,
-    slug: "transit-signal-priority",
-    title: "Transit Signal Priority",
+    slug: "first-rider",
+    title: "First Rider Program",
     tagline: "Give buses the green light to keep moving",
     description: "TSP systems detect approaching buses and extend green lights or shorten red lights, reducing delays at intersections without significantly impacting other traffic.",
     benefits: [
@@ -90,10 +90,10 @@ export const interventions = [
       "Minneapolis Metro Transit",
       "Phoenix Valley Metro"
     ],
-    cardimage: "/images/icecream.png",
+    cardimage: "/images/first-rider-1.jpg",
     images: [
-      "/images/icecream.png",
-    ],    category: "Empowerment"
+      "/images/first-rider-1.jpg",
+    ],    category: "Education"
   },
   {
     id: 5,
@@ -128,8 +128,31 @@ export const interventions = [
   },
   {
     id: 6,
-    slug: "all-door-boarding",
-    title: "All-Door Boarding",
+    slug: "organize-political",
+    title: "Organize with Political Parties",
+    tagline: "Speed up boarding and reduce dwell time",
+    description: "Allow passengers to board through any door, not just the front. This simple change dramatically reduces dwell time at busy stops and speeds up the entire route.",
+    benefits: [
+      "Reduces dwell time by 30-50%",
+      "Speeds up overall route time",
+      "Improves passenger flow",
+      "Works well with proof-of-payment systems"
+    ],
+    implementation: "Requires fare validation system or proof-of-payment. Install validators at all doors. Train staff on new procedures. Start with high-frequency routes.",
+    examples: [
+      "San Francisco Muni",
+      "LA Metro Rapid",
+      "TransLink Vancouver"
+    ],
+    cardimage: "/images/organize-political-1.png",
+    images: [
+      "/images/organize-political-1.png",
+    ],    category: "Empowerment"
+  },
+  {
+    id: 7,
+    slug: "participate-in-community",
+    title: "Participation in Community Events",
     tagline: "Speed up boarding and reduce dwell time",
     description: "Allow passengers to board through any door, not just the front. This simple change dramatically reduces dwell time at busy stops and speeds up the entire route.",
     benefits: [

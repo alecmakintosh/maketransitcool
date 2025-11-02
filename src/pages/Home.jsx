@@ -25,16 +25,16 @@ function Home() {
           <h2>Why This Matters</h2>
           <div className="why-grid">
             <div className="why-card">
-              <h3>Change The Culture Of Transit</h3>
-              <p>Public transit projects are easier to plan and fund when there is a culture of support for transit by the public.</p>
+              <h3>Transit Is In A Crisis</h3>
+              <p>Lack of operational funding, issues with safety and anti-social behaviour, a recovery from COVID-19; these all weigh heavily on Canadian transit.</p>
             </div>
             <div className="why-card">
-              <h3>Enable Decision-Makers To Act</h3>
-              <p>Political support is crucial for transit development, especially amongst those that may not immediately benefit.</p>
+              <h3>We Can Change The Culture Of Transit</h3>
+              <p>Public transit projects are easier to plan and fund when there is a culture of support for transit from the public.</p>
             </div>
             <div className="why-card">
-              <h3>Get People Involved In Transit</h3>
-              <p>There is a lot of interest in transit. Let's engage with them.</p>
+              <h3>Decision-Makers Can </h3>
+              <p>Greater political will compels decision-makers to act to support transit.</p>
             </div>
           </div>
         </div>

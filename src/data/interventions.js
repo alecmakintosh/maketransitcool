@@ -17,7 +17,7 @@ export const interventions = [
       "LA Metro Rapid",
       "Bogotá TransMilenio"
     ],
-    image: "/images/bus-lanes.jpg",
+    image: "/images/icecream.png",
     category: "Infrastructure"
   },
   {
@@ -38,7 +38,7 @@ export const interventions = [
       "London TfL Countdown",
       "NYC MTA Bus Time"
     ],
-    image: "/images/realtime-displays.jpg",
+    image: "/images/icecream.png",
     category: "Technology"
   },
   {
@@ -59,7 +59,7 @@ export const interventions = [
       "San Francisco Muni Metro",
       "Boston Silver Line"
     ],
-    image: "/images/branded-network.jpg",
+    image: "/images/icecream.png",
     category: "Branding"
   },
   {
@@ -80,7 +80,7 @@ export const interventions = [
       "Minneapolis Metro Transit",
       "Phoenix Valley Metro"
     ],
-    image: "/images/signal-priority.jpg",
+    image: "/images/icecream.png",
     category: "Technology"
   },
   {
@@ -101,7 +101,7 @@ export const interventions = [
       "San Francisco Muni stops",
       "Denver RTD stations"
     ],
-    image: "/images/bus-shelters.jpg",
+    image: "/images/icecream.png",
     category: "Infrastructure"
   },
   {
@@ -122,7 +122,7 @@ export const interventions = [
       "LA Metro Rapid",
       "TransLink Vancouver"
     ],
-    image: "/images/all-door-boarding.jpg",
+    image: "/images/icecream.png",
     category: "Operations"
   }
 ];

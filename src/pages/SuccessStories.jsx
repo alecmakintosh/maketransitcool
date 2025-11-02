@@ -180,8 +180,8 @@ function Stories() {
   return (
     <div className="stories-page">
       <div className="stories-header">
-        <h1>Our Stories</h1>
-        <p>Explore stories from Group Five's diverse backgrounds on why we love transit.</p>
+        <h1>Transit Success Stories</h1>
+        <p>Explore real-world examples of transit interventions across Canada that are making a difference</p>
       </div>
 
       <div className="map-container">

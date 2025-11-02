@@ -25,8 +25,8 @@ function InterventionModal({ intervention, onClose }) {
         <button className="modal-close" onClick={onClose}>×</button>
         
         <div className="modal-header">
-          <div className="modal-image-placeholder">
-            <span className="modal-category-badge">{intervention.category}</span>
+          <div className="modal-image" style={{backgroundImage: `url(${intervention.image})`}}>
+            <div className="modal-category-badge">{intervention.category}</div>
           </div>
           <div className="modal-title-section">
             <h2>{intervention.title}</h2>

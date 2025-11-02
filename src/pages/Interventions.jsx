@@ -14,7 +14,7 @@ function Interventions() {
   return (
     <div className="interventions-page">
       <div className="interventions-header">
-        <h1>Transit Interventions</h1>
+        <h1>Interventions</h1>
         <p>Explore proven strategies to improve your transit system</p>
       </div>
 
@@ -36,24 +36,24 @@ function Interventions() {
         ))}
       </div>
 
-      <div className="interventions-grid">
+        <div className="interventions-grid">
         {filteredInterventions.map(intervention => (
-          <div 
+            <div 
             key={intervention.id} 
             className="intervention-card"
             onClick={() => setSelectedIntervention(intervention)}
-          >
-            <div className="card-image-placeholder">
-              <span className="category-badge">{intervention.category}</span>
+            >
+            <div className="card-image" style={{backgroundImage: `url(${intervention.image})`}}>
+                <span className="category-badge">{intervention.category}</span>
             </div>
             <div className="card-content">
-              <h3>{intervention.title}</h3>
-              <p className="card-tagline">{intervention.tagline}</p>
-              <button className="learn-more">Learn More →</button>
+                <h3>{intervention.title}</h3>
+                <p className="card-tagline">{intervention.tagline}</p>
+                <button className="learn-more">Learn More →</button>
             </div>
-          </div>
+            </div>
         ))}
-      </div>
+        </div>
 
       {selectedIntervention && (
         <InterventionModal 

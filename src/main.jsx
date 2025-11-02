@@ -1,7 +1,7 @@
-import './colors.css'  // ADD THIS LINE FIRST
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
+//import './colors.css'  // ADD THIS LINE FIRST
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(

@@ -113,16 +113,19 @@ const getClusterPositions = (cluster, map) => {
 };
 
 // Custom marker icon for individual stories
-const createStoryIcon = (storyId, rotation = 0) => {
+const createStoryIcon = (storyId, storyTitle, rotation = 0) => {
   return L.divIcon({
     className: 'custom-marker',
     html: `
-      <div class="marker-pin" data-story="${storyId}" style="transform: rotate(${rotation}deg); transform-origin: 15px 40px;">
-        <div class="marker-image-placeholder"></div>
+      <div class="marker-container">
+        <div class="marker-pin" data-story="${storyId}" style="transform: rotate(${rotation}deg); transform-origin: 15px 40px;">
+          <div class="marker-image-placeholder"></div>
+        </div>
+        <div class="marker-tooltip">${storyTitle}</div>
       </div>
     `,
     iconSize: [30, 40],
-    iconAnchor: [15, 40], // Center bottom of the narrower pin
+    iconAnchor: [15, 40],
   });
 };
 
@@ -195,31 +198,31 @@ function Stories() {
           
           <MapEventHandler onMapChange={handleMapChange} />
           
-          {clusterPositions.map((item, index) => {
+            {clusterPositions.map((item, index) => {
             if (item.isCluster) {
-              return (
+                return (
                 <Marker
-                  key={`cluster-${index}`}
-                  position={item.position}
-                  icon={createClusterIcon(item.count)}
-                  eventHandlers={{
+                    key={`cluster-${index}`}
+                    position={item.position}
+                    icon={createClusterIcon(item.count)}
+                    eventHandlers={{
                     click: () => handleClusterClick(item.stories),
-                  }}
+                    }}
                 />
-              );
+                );
             } else {
-              return (
+                return (
                 <Marker
-                  key={`story-${item.story.id}-${index}`}
-                  position={item.position}
-                  icon={createStoryIcon(item.story.id, item.rotation)}
-                  eventHandlers={{
+                    key={`story-${item.story.id}-${index}`}
+                    position={item.position}
+                    icon={createStoryIcon(item.story.id, item.story.title, item.rotation)}
+                    eventHandlers={{
                     click: () => setSelectedStory(item.story),
-                  }}
+                    }}
                 />
-              );
+                );
             }
-          })}
+            })}
         </MapContainer>
       </div>
 

@@ -57,11 +57,13 @@ const groupStoriesIntoClusters = (stories, map, clusterRadius = 60) => {
 };
 
 // Calculate positions for stories in a cluster
+// Calculate positions for stories in a cluster
 const getClusterPositions = (cluster, map) => {
   if (cluster.length === 1) {
     return [{
       story: cluster[0],
       position: [cluster[0].lat, cluster[0].lng],
+      rotation: 0,
       isCluster: false
     }];
   }
@@ -71,7 +73,7 @@ const getClusterPositions = (cluster, map) => {
   const centerLng = cluster.reduce((sum, s) => sum + s.lng, 0) / cluster.length;
   
   // If more than 6 stories, show as numbered cluster
-  if (cluster.length > 6) {
+  if (cluster.length > 4) {
     return [{
       stories: cluster,
       position: [centerLat, centerLng],
@@ -83,17 +85,26 @@ const getClusterPositions = (cluster, map) => {
   // Arrange pins in a circle around the center
   const positions = [];
   const radius = 0.08; // Radius in degrees
+  const rotationStep = 72; // 30 degrees per pin
   
   cluster.forEach((story, index) => {
-    const angle = (360 / cluster.length) * index - 90; // Start from top
-    const angleRad = angle * Math.PI / 180;
+    // Calculate rotation: spread evenly around 0
+    // For 2 pins: -36, 36
+    // For 3 pins: -72, 0, 72
+    // For 4 pins: -108, -36, 36, 108
+    const totalRotation = rotationStep * (cluster.length - 1);
+    const rotation = -totalRotation / 2 + (index * rotationStep);
+    
+    // Convert rotation to radians for position calculation
+    const angleRad = rotation * Math.PI / 180;
     
     positions.push({
       story,
       position: [
-        centerLat + radius * Math.cos(angleRad),
-        centerLng + radius * Math.sin(angleRad)
+        centerLat + radius * Math.sin(angleRad),
+        centerLng + radius * Math.cos(angleRad)
       ],
+      rotation: rotation, // Just use the rotation directly
       isCluster: false
     });
   });
@@ -102,16 +113,16 @@ const getClusterPositions = (cluster, map) => {
 };
 
 // Custom marker icon for individual stories
-const createStoryIcon = (storyId) => {
+const createStoryIcon = (storyId, rotation = 0) => {
   return L.divIcon({
     className: 'custom-marker',
     html: `
-      <div class="marker-pin" data-story="${storyId}">
+      <div class="marker-pin" data-story="${storyId}" style="transform: rotate(${rotation}deg); transform-origin: 15px 40px;">
         <div class="marker-image-placeholder"></div>
       </div>
     `,
-    iconSize: [40, 40],
-    iconAnchor: [20, 20],
+    iconSize: [30, 40],
+    iconAnchor: [15, 40], // Center bottom of the narrower pin
   });
 };
 
@@ -201,7 +212,7 @@ function Stories() {
                 <Marker
                   key={`story-${item.story.id}-${index}`}
                   position={item.position}
-                  icon={createStoryIcon(item.story.id)}
+                  icon={createStoryIcon(item.story.id, item.rotation)}
                   eventHandlers={{
                     click: () => setSelectedStory(item.story),
                   }}

@@ -13,12 +13,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {/* Overlay for mobile menu */}
-        <div 
-          className={`menu-overlay ${menuOpen ? 'active' : ''}`}
-          onClick={closeMenu}
-        />
-
         <nav className="navbar">
           <div className="nav-container">
             <Link to="/" className="nav-logo" onClick={closeMenu}>
@@ -41,6 +35,13 @@ function App() {
             </div>
           </div>
         </nav>
+
+        {/* Overlay and menu wrapper */}
+        {menuOpen && (
+          <>
+            <div className="menu-overlay" onClick={closeMenu} />
+          </>
+        )}
 
         <Routes>
           <Route path="/" element={<Home />} />

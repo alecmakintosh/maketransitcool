@@ -72,7 +72,6 @@
 .why-card {
   padding: 2rem;
   background: #f7fafc;
-  border-radius: 12px;
   border-left: 4px solid var(--primary-color);
 }
 

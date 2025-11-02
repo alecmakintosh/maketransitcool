@@ -1,5 +1,5 @@
 .interventions-page {
-  padding-top: 80px;
+  padding-top: 50px;
   min-height: 100vh;
   background: #f7fafc;
 }
@@ -50,24 +50,6 @@
 .filter-bar button.active {
   background: var(--primary-color);
   color: white;
-}
-
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  .interventions-header {
-    padding: 80px 20px 40px;
-  }
-
-  .filter-bar {
-    padding: 1.5rem 15px;
-    gap: 0.5rem;
-  }
-
-  .filter-bar button {
-    padding: 0.6rem 1.2rem;
-    font-size: 0.9rem;
-    flex: 0 0 auto;
-  }
 }
 
 .interventions-grid {
@@ -140,9 +122,29 @@
   font-size: 1rem;
 }
 
+/* Mobile adjustments */
 @media (max-width: 768px) {
+  .interventions-page {
+    padding-top: 65px;
+  }
+
+  .interventions-header {
+    padding: 80px 20px 40px;
+  }
+
   .interventions-header h1 {
     font-size: 2rem;
+  }
+
+  .filter-bar {
+    padding: 1.5rem 15px;
+    gap: 0.5rem;
+  }
+
+  .filter-bar button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    flex: 0 0 auto;
   }
   
   .interventions-grid {

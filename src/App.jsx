@@ -8,12 +8,20 @@ import './App.css';
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <Router>
       <div className="App">
+        {/* Overlay for mobile menu */}
+        <div 
+          className={`menu-overlay ${menuOpen ? 'active' : ''}`}
+          onClick={closeMenu}
+        />
+
         <nav className="navbar">
           <div className="nav-container">
-            <Link to="/" className="nav-logo">
+            <Link to="/" className="nav-logo" onClick={closeMenu}>
               Make Transit Cool
             </Link>
             
@@ -28,8 +36,8 @@ function App() {
             </button>
 
             <div className={`nav-links ${menuOpen ? 'active' : ''}`}>
-              <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
-              <Link to="/interventions" onClick={() => setMenuOpen(false)}>Interventions</Link>
+              <Link to="/" onClick={closeMenu}>Home</Link>
+              <Link to="/interventions" onClick={closeMenu}>Interventions</Link>
             </div>
           </div>
         </nav>

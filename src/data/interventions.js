@@ -1,29 +1,31 @@
 export const interventions = [
-  {
+    {
     id: 1,
-    slug: "dedicated-bus-lanes",
-    title: "Dedicated Bus Lanes",
-    tagline: "Priority lanes for faster, more reliable service",
-    description: "Dedicated bus lanes separate buses from general traffic, dramatically improving speed and reliability. This visible commitment to transit shows riders that their time matters.",
+    slug: "events-for-milestones",
+    title: "Community Events for Transit Milestones",
+    tagline: "Comfortable, attractive stops that people want to use",
+    description: "Upgraded shelters with seating, lighting, real-time information, and weather protection transform the waiting experience and signal investment in quality transit.",
     benefits: [
-      "Reduces travel time by 20-40%",
-      "Improves schedule reliability",
-      "Increases ridership",
-      "Demonstrates commitment to transit"
+      "Improves comfort and safety",
+      "Increases perceived service quality",
+      "Provides advertising revenue opportunities",
+      "Enhances neighborhood appeal"
     ],
-    implementation: "Start with high-traffic corridors during peak hours. Use clear pavement markings and signage. Consider protected lanes with physical barriers for maximum effectiveness.",
+    implementation: "Prioritize high-ridership stops and areas with longer wait times. Partner with advertising companies for funding. Include amenities like USB charging and wifi where feasible.",
     examples: [
-      "TransLink, Vancouver - 99 B-Line",
-      "LA Metro Rapid",
-      "Bogotá TransMilenio"
+      "Seattle Metro shelters",
+      "San Francisco Muni stops",
+      "Denver RTD stations"
     ],
-    image: "/images/icecream.png",
-    category: "Infrastructure"
+    cardimage: "/images/milestone-events-1.jpg",
+    images: [
+      "/images/milestone-events-1.jpg",
+    ],    category: "Celebration"
   },
   {
     id: 2,
-    slug: "real-time-arrival-displays",
-    title: "Real-Time Arrival Displays",
+    slug: "limited-transit-cards",
+    title: "Limited Edition Transit Cards",
     tagline: "Let riders know exactly when their bus arrives",
     description: "Digital displays at stops showing live arrival times reduce uncertainty and perceived wait times. Riders feel more in control and informed about their journey.",
     benefits: [
@@ -38,8 +40,14 @@ export const interventions = [
       "London TfL Countdown",
       "NYC MTA Bus Time"
     ],
-    image: "/images/icecream.png",
-    category: "Technology"
+    cardimage: "/images/cards-4.png",
+    images: [
+      "/images/cards-4.png",
+      "/images/cards-1.jpg",
+      "/images/cards-2.png",
+      "/images/cards-3.png",
+    ],
+    category: "Celebration"
   },
   {
     id: 3,
@@ -59,8 +67,10 @@ export const interventions = [
       "San Francisco Muni Metro",
       "Boston Silver Line"
     ],
-    image: "/images/icecream.png",
-    category: "Branding"
+    cardimage: "/images/icecream.png",
+    images: [
+      "/images/icecream.png",
+    ],    category: "Education"
   },
   {
     id: 4,
@@ -71,7 +81,7 @@ export const interventions = [
     benefits: [
       "Reduces travel time by 10-20%",
       "Improves schedule adherence",
-      "Cost-effective infrastructure upgrade",
+      "Cost-effective Celebration upgrade",
       "Minimal impact on other traffic"
     ],
     implementation: "Start with key corridors with signal timing issues. Requires GPS on vehicles and traffic signal integration. Coordinate with traffic engineering departments.",
@@ -80,29 +90,41 @@ export const interventions = [
       "Minneapolis Metro Transit",
       "Phoenix Valley Metro"
     ],
-    image: "/images/icecream.png",
-    category: "Technology"
+    cardimage: "/images/icecream.png",
+    images: [
+      "/images/icecream.png",
+    ],    category: "Empowerment"
   },
   {
     id: 5,
-    slug: "enhanced-bus-shelters",
-    title: "Enhanced Bus Shelters",
-    tagline: "Comfortable, attractive stops that people want to use",
-    description: "Upgraded shelters with seating, lighting, real-time information, and weather protection transform the waiting experience and signal investment in quality transit.",
+    slug: "bus-wraps",
+    title: "Bus Wraps",
+    //tagline: "Priority lanes for faster, more reliable service",
+    description: "Dedicated bus lanes separate buses from general traffic, dramatically improving speed and reliability. This visible commitment to transit shows riders that their time matters.",
     benefits: [
-      "Improves comfort and safety",
-      "Increases perceived service quality",
-      "Provides advertising revenue opportunities",
-      "Enhances neighborhood appeal"
+      "Reduces travel time by 20-40%",
+      "Improves schedule reliability",
+      "Increases ridership",
+      "Demonstrates commitment to transit"
     ],
-    implementation: "Prioritize high-ridership stops and areas with longer wait times. Partner with advertising companies for funding. Include amenities like USB charging and wifi where feasible.",
+    implementation: "Start with high-traffic corridors during peak hours. Use clear pavement markings and signage. Consider protected lanes with physical barriers for maximum effectiveness.",
     examples: [
-      "Seattle Metro shelters",
-      "San Francisco Muni stops",
-      "Denver RTD stations"
+      "TransLink, Vancouver - 99 B-Line",
+      "LA Metro Rapid",
+      "Bogotá TransMilenio"
     ],
-    image: "/images/icecream.png",
-    category: "Infrastructure"
+    cardimage: "/images/buswrap-5.jpg",
+    images: [
+      "/images/buswrap-5.jpg",
+      "/images/buswrap-1.jpg",
+      "/images/buswrap-2.jpeg",
+      "/images/buswrap-3.png",
+      "/images/buswrap-4.jpg",
+      "/images/buswrap-7.png",
+      "/images/buswrap-8.png",
+      "/images/buswrap-9.jpg",
+    ],
+    category: "Celebration"
   },
   {
     id: 6,
@@ -122,14 +144,16 @@ export const interventions = [
       "LA Metro Rapid",
       "TransLink Vancouver"
     ],
-    image: "/images/icecream.png",
-    category: "Operations"
+    cardimage: "/images/icecream.png",
+    images: [
+      "/images/icecream.png",
+    ],    category: "Integration"
   }
 ];
 
 export const categories = [
-  "Infrastructure",
-  "Technology", 
-  "Branding",
-  "Operations"
+  "Celebration",
+  "Empowerment", 
+  "Education",
+  "Integration"
 ];

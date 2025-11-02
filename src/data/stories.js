@@ -29,7 +29,7 @@ export const stories = [
     province: "ON",
     lat: 43.6532,
     lng: -79.3832,
-    title: "Alec Mak - Map Goes Where?",
+    title: "Alec - Map Goes Where?",
     image: "/images/makalec.jpg",
     story: "I grew up right on top of a subway station in Toronto, and used to stare up at the subway map and wonder about all the places I could go. Years later, I now contribute to getting more stations built and more places connected.",
     year: "2023",

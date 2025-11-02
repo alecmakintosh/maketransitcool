@@ -10,11 +10,10 @@ function Home() {
           <div className="hero-content">
             <h1>Make Transit Cool</h1>
             <p className="tagline">
-              Proven interventions to transform public transportation
+              A toolkit to improve engagement and communication for transit agencies.
             </p>
             <p className="description">
-              A curated resource for transportation professionals showcasing practical, 
-              evidence-based strategies to improve transit systems and increase ridership.
+              A resource for transport professionals showcasing past successful interventions to increase public interest in transit.
             </p>
             <Link to="/interventions" className="cta-button">
               Explore Interventions
@@ -26,16 +25,16 @@ function Home() {
           <h2>Why This Matters</h2>
           <div className="why-grid">
             <div className="why-card">
-              <h3>🚀 Increase Ridership</h3>
-              <p>Small changes can lead to significant ridership gains when done right</p>
+              <h3>Change The Culture Of Transit</h3>
+              <p>Public transit projects are easier to plan and fund when there is a culture of support for transit by the public.</p>
             </div>
             <div className="why-card">
-              <h3>💰 Maximize ROI</h3>
-              <p>Learn which interventions deliver the most impact for your investment</p>
+              <h3>Enable Decision-Makers To Act</h3>
+              <p>Political support is crucial for transit development, especially amongst those that may not immediately benefit.</p>
             </div>
             <div className="why-card">
-              <h3>📊 Evidence-Based</h3>
-              <p>All strategies backed by real-world examples and data</p>
+              <h3>Get People Involved In Transit</h3>
+              <p>There is a lot of interest in transit. Let's engage with them.</p>
             </div>
           </div>
         </div>

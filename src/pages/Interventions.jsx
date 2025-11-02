@@ -17,7 +17,7 @@ function Interventions() {
         <div className="interventions-page">
         <div className="interventions-header">
             <h1>Interventions</h1>
-            <p>Explore proven strategies to improve your transit system</p>
+            <p>Explore proven strategies to improve your transit system.</p>
         </div>
 
         <div className="filter-bar">
@@ -45,7 +45,7 @@ function Interventions() {
                 className="intervention-card"
                 onClick={() => setSelectedIntervention(intervention)}
                 >
-                <div className="card-image" style={{backgroundImage: `url(${intervention.image})`}}>
+                <div className="card-image" style={{backgroundImage: `url(${intervention.cardimage})`}}>
                     <span className="category-badge">{intervention.category}</span>
                 </div>
                 <div className="card-content">

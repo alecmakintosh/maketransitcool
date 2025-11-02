@@ -13,7 +13,7 @@ function Home() {
               A toolkit to improve engagement and communication for transit agencies.
             </p>
             <p className="description">
-              A resource for transport professionals showcasing past successful interventions to increase public interest in transit.
+              Showcasing past successful interventions to develop public support in transit.
             </p>
             <Link to="/interventions" className="cta-button">
               Explore Interventions

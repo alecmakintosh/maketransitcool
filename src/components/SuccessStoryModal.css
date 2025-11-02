@@ -51,35 +51,20 @@
 
 .story-modal-image-placeholder {
   height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #f7fafc;
-  position: relative;
-  padding: 2rem;
-}
-
-.story-modal-image-placeholder::before {
-  content: '';
-  width: 250px;
-  height: 250px;
   background: var(--gradient);
-  border-radius: 50%;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  position: relative;
 }
 
 .story-location-badge {
   position: absolute;
   bottom: 1.5rem;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 1.5rem;
   background: rgba(255, 255, 255, 0.95);
   color: var(--primary-color);
   padding: 0.75rem 1.5rem;
   border-radius: 25px;
   font-weight: 600;
   font-size: 0.95rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .story-modal-body {

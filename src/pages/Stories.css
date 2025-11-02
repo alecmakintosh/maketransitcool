@@ -214,34 +214,33 @@
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
-  .stories-page {
-    padding-top: 65px;
+  .story-modal-overlay {
+    padding: 0;
+    align-items: flex-start;
   }
 
-  .stories-header {
-    padding: 80px 20px 30px;
+  .story-modal-content {
+    max-height: 100vh;
+    min-height: 100vh;
+    margin: 0;
+    border-radius: 0;
   }
 
-  .stories-header h1 {
-    font-size: 2rem;
-  }
-
-  .stories-header p {
-    font-size: 1rem;
-  }
-
-  .map-container {
-    height: 500px;
-  }
-
-  .cluster-modal-content {
+  .story-modal-image-placeholder {
+    height: 250px;
     padding: 1.5rem;
-    max-height: 90vh;
   }
 
-  .cluster-story-placeholder {
-    width: 60px;
-    height: 60px;
-    min-width: 60px;
+  .story-modal-image-placeholder::before {
+    width: 200px;
+    height: 200px;
+  }
+
+  .story-modal-body h2 {
+    font-size: 1.5rem;
+  }
+
+  .story-modal-body {
+    padding: 1.5rem;
   }
 }

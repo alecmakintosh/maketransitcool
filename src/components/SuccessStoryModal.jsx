@@ -29,6 +29,11 @@ function StoryModal({ story, onClose }) {
         </div>
 
         <div className="story-modal-body">
+          <div className="story-meta">
+            <span className="story-year">{story.year}</span>
+            <span className="story-intervention">{story.intervention}</span>
+          </div>
+          
           <h2>{story.title}</h2>
           
           <p className="story-text">{story.story}</p>

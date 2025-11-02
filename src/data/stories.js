@@ -29,9 +29,9 @@ export const stories = [
     province: "ON",
     lat: 43.6532,
     lng: -79.3832,
-    title: "King Street Pilot Success",
-    image: "/images/story-placeholder-3.jpg",
-    story: "Toronto's King Street Transit Pilot transformed a congested downtown corridor into a transit priority zone. By restricting through traffic and giving streetcars priority, travel times decreased by 25% and ridership increased by 16%. The project has become a model for transit-first street design.",
+    title: "Alec Mak - Map Goes Where?",
+    image: "/images/makalec.jpg",
+    story: "I grew up right on top of a subway station in Toronto, and used to stare up at the subway map and wonder about all the places I could go. Years later, I now contribute to getting more stations built and more places connected.",
     year: "2023",
     intervention: "Dedicated Transit Lanes"
   },

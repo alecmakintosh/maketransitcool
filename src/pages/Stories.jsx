@@ -4,6 +4,7 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { stories } from '../data/stories';
 import StoryModal from '../components/StoryModal';
+import PageTransition from '../components/PageTransition';
 import './Stories.css';
 
 // Fix for default marker icons
@@ -178,72 +179,74 @@ function Stories() {
   };
 
   return (
-    <div className="stories-page">
-      <div className="stories-header">
-        <h1>Our Stories</h1>
-        <p>Explore stories from Group Five's diverse backgrounds on why we love transit.</p>
-      </div>
+    <PageTransition>
+        <div className="stories-page">
+        <div className="stories-header">
+            <h1>Our Stories</h1>
+            <p>Explore stories from Group Five's diverse backgrounds on why we love transit.</p>
+        </div>
 
-      <div className="map-container">
-        <MapContainer 
-          center={mapCenter} 
-          zoom={mapZoom} 
-          className="leaflet-map"
-          scrollWheelZoom={true}
-        >
-          <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          
-          <MapEventHandler onMapChange={handleMapChange} />
-          
-            {clusterPositions.map((item, index) => {
-            if (item.isCluster) {
-                return (
-                <Marker
-                    key={`cluster-${index}`}
-                    position={item.position}
-                    icon={createClusterIcon(item.count)}
-                    eventHandlers={{
-                    click: () => handleClusterClick(item.stories),
-                    }}
-                />
-                );
-            } else {
-                return (
-                <Marker
-                    key={`story-${item.story.id}-${index}`}
-                    position={item.position}
-                    icon={createStoryIcon(item.story.id, item.story.title, item.rotation)}
-                    eventHandlers={{
-                    click: () => setSelectedStory(item.story),
-                    }}
-                />
-                );
-            }
-            })}
-        </MapContainer>
-      </div>
+        <div className="map-container">
+            <MapContainer 
+            center={mapCenter} 
+            zoom={mapZoom} 
+            className="leaflet-map"
+            scrollWheelZoom={true}
+            >
+            <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            
+            <MapEventHandler onMapChange={handleMapChange} />
+            
+                {clusterPositions.map((item, index) => {
+                if (item.isCluster) {
+                    return (
+                    <Marker
+                        key={`cluster-${index}`}
+                        position={item.position}
+                        icon={createClusterIcon(item.count)}
+                        eventHandlers={{
+                        click: () => handleClusterClick(item.stories),
+                        }}
+                    />
+                    );
+                } else {
+                    return (
+                    <Marker
+                        key={`story-${item.story.id}-${index}`}
+                        position={item.position}
+                        icon={createStoryIcon(item.story.id, item.story.title, item.rotation)}
+                        eventHandlers={{
+                        click: () => setSelectedStory(item.story),
+                        }}
+                    />
+                    );
+                }
+                })}
+            </MapContainer>
+        </div>
 
-      {selectedStory && (
-        <StoryModal 
-          story={selectedStory}
-          onClose={() => setSelectedStory(null)}
-        />
-      )}
+        {selectedStory && (
+            <StoryModal 
+            story={selectedStory}
+            onClose={() => setSelectedStory(null)}
+            />
+        )}
 
-      {showClusterModal && (
-        <ClusterModal 
-          stories={selectedClusterStories}
-          onSelectStory={(story) => {
-            setShowClusterModal(false);
-            setSelectedStory(story);
-          }}
-          onClose={() => setShowClusterModal(false)}
-        />
-      )}
-    </div>
+        {showClusterModal && (
+            <ClusterModal 
+            stories={selectedClusterStories}
+            onSelectStory={(story) => {
+                setShowClusterModal(false);
+                setSelectedStory(story);
+            }}
+            onClose={() => setShowClusterModal(false)}
+            />
+        )}
+        </div>
+    </PageTransition>
   );
 }
 

@@ -1,10 +1,25 @@
 import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import Home from './pages/Home';
 import Interventions from './pages/Interventions';
 import Stories from './pages/Stories';
 import Footer from './components/Footer';
 import './App.css';
+
+function AnimatedRoutes() {
+  const location = useLocation();
+
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<Home />} />
+        <Route path="/interventions" element={<Interventions />} />
+        <Route path="/stories" element={<Stories />} />
+      </Routes>
+    </AnimatePresence>
+  );
+}
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -42,11 +57,7 @@ function App() {
           <div className="menu-overlay" onClick={closeMenu} />
         )}
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/interventions" element={<Interventions />} />
-          <Route path="/stories" element={<Stories />} />
-        </Routes>
+        <AnimatedRoutes />
 
         <Footer />
       </div>
